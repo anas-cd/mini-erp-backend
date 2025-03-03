@@ -1,0 +1,28 @@
+{
+    "name": "anas-cd/tenanthub",
+    "description": "",
+    "authors": [
+        {
+            "name": "Anas Shamlan",
+            "email": "anas.cd.97@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\TenantHub\\": "app/",
+            "Modules\\TenantHub\\Database\\Factories\\": "database/factories/",
+            "Modules\\TenantHub\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\TenantHub\\Tests\\": "tests/"
+        }
+    }
+}

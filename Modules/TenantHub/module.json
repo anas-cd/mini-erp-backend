@@ -1,0 +1,11 @@
+{
+    "name": "TenantHub",
+    "alias": "tenanthub",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\TenantHub\\Providers\\TenantHubServiceProvider"
+    ],
+    "files": []
+}
