@@ -5,12 +5,13 @@ namespace Modules\TenantHub\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 // use Modules\TenantHub\Database\Factories\LeaseFactory;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\TenantHub\Models\Tenant;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Lease extends Model
 {
-    use HasFactory;
+    use HasFactory, SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
@@ -38,13 +39,4 @@ class Lease extends Model
         return $this->belongsTo(Tenant::class);
     }
 
-    public function property(): BelongsTo
-    {
-        // return $this->belongsTo(Property::class);
-    }
-
-    // protected static function newFactory(): LeaseFactory
-    // {
-    //     // return LeaseFactory::new();
-    // }
 }

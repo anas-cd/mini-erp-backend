@@ -17,9 +17,10 @@ return new class extends Migration {
             $table->date('move_in_date')->nullable();
             $table->date('move_out_date')->nullable();
             $table->string('lease_term')->nullable();
-            $table->decimal('monthly_rent', 10, 2);
+            $table->decimal('monthly_rent', 10, 2)->nullable();
             $table->decimal('deposit', 10, 2)->nullable();
             $table->json('lease_details')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

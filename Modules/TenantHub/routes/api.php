@@ -26,10 +26,11 @@ Route::middleware("auth:sanctum")->prefix("v1")->group(function () {
 
     // --- CRUD lease api endpoints ---
     Route::post("lease", [LeaseController::class, "store"]);
-    Route::patch("lease", [LeaseController::class, "update"]);
-    Route::get("lease", [LeaseController::class, "show"]);
-    Route::delete("lease", [LeaseController::class, "delete"]);
+    Route::patch("lease/{id}", [LeaseController::class, "update"]);
+    Route::get("lease/{id?}", [LeaseController::class, "show"]);
+    Route::delete("lease/{id}", [LeaseController::class, "delete"]);
 
     // --- dashboard summary api endpoint ---
-    Route::get("summary/tenant", [TenantHubController::class, "summary"]);
+    Route::get("summary/tenant", [TenantHubController::class, "tenantSummary"]);
+    Route::get("summary/leases", [TenantHubController::class, "leasesSummary"]);
 });

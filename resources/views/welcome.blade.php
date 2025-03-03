@@ -119,6 +119,12 @@
                         <span class="http http_get">Get</span> <code>/summary/tenant</code> : important tenants info
                     </p>
                 </li>
+                <li>
+                    <p>
+                        <span class="http http_get">Get</span> <code>/summary/leases</code> : upcoming leases dates
+                        summary
+                    </p>
+                </li>
             </ul>
         </details>
         <details open>
@@ -144,6 +150,34 @@
                     <p>
                         <span class="http http_delete">Delete</span> <code>/tenant/{id}</code> : to soft delete tenant
                         profile, profile record will be permanently deleted after 6 months.
+                    </p>
+                </li>
+            </ul>
+        </details>
+        <details open>
+            <summary>Leases</summary>
+            <ul>
+                <li>
+                    <p>
+                        <span class="http http_post">Post</span> <code>/lease</code> : to register a lease
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="http http_get">Get</span> <code>/lease/{id?}</code> : to show lease info by query
+                        id, or any of the following in the body request ['tenant_email', 'property_id'], Note
+                        'tenant_id' will return leases collection of said tenant
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="http http_patch">Patch</span> <code>/lease/{id}</code> : to update lease info.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="http http_delete">Delete</span> <code>/lease/{id}</code> : to soft delete lease
+                        record, record will be permanently deleted after 6 months.
                     </p>
                 </li>
             </ul>
