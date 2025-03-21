@@ -1,0 +1,11 @@
+{
+    "name": "MaintenanceHub",
+    "alias": "maintenancehub",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\MaintenanceHub\\Providers\\MaintenanceHubServiceProvider"
+    ],
+    "files": []
+}

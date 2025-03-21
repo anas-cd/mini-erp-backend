@@ -1,0 +1,28 @@
+{
+    "name": "anas-cd/maintenancehub",
+    "description": "",
+    "authors": [
+        {
+            "name": "Anas Shamlan",
+            "email": "anas.cd.97@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {}
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\MaintenanceHub\\": "app/",
+            "Modules\\MaintenanceHub\\Database\\Factories\\": "database/factories/",
+            "Modules\\MaintenanceHub\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\MaintenanceHub\\Tests\\": "tests/"
+        }
+    }
+}

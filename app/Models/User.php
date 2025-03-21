@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Modules\MaintenanceHub\Models\Technician;
 use Modules\TenantHub\Models\Tenant;
 
 class User extends Authenticatable
@@ -52,5 +53,10 @@ class User extends Authenticatable
     public function tenant(): HasOne
     {
         return $this->hasOne(Tenant::class, 'user_id');
+    }
+
+    public function technician(): HasOne
+    {
+        return $this->hasOne(Technician::class, 'user_id');
     }
 }

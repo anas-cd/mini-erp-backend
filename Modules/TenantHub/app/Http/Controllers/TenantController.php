@@ -38,7 +38,7 @@ class TenantController extends Controller
      */
     public function show($id = null)
     {
-        $tenant = Tenant::findOrFail($id ?? auth()->id());
+        $tenant = Tenant::findOrFail($id ?? auth()->user()->tenant->id);
         return $this->success(TenantResource::make($tenant));
     }
 

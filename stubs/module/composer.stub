@@ -1,10 +1,10 @@
 {
-    "name": "$VENDOR$/$LOWER_NAME$",
+    "name": "anas-cd/$LOWER_NAME$",
     "description": "",
     "authors": [
         {
-            "name": "$AUTHOR_NAME$",
-            "email": "$AUTHOR_EMAIL$"
+            "name": "Anas Shamlan",
+            "email": "anas.cd.97@gmail.com"
         }
     ],
     "extra": {

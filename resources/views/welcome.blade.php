@@ -182,6 +182,99 @@
                 </li>
             </ul>
         </details>
+        <details open>
+            <summary>Maintenance Requests</summary>
+            <ul>
+                <li>
+                    <p>
+                        <span class="http http_post">Post</span> <code>/maintenance-request</code> : to register a
+                        maintenance request
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="http http_get">Get</span> <code>/maintenance-request/{id}</code> : to show a
+                        maintenance request info by query
+                        id
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="http http_patch">Patch</span> <code>/maintenance-request/{id}</code> : to update a
+                        maintenance request info.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="http http_delete">Delete</span> <code>/maintenance-request/{id}</code> : to soft
+                        delete a maintenance request
+                        record, record will be only soft deleted.
+                    </p>
+                </li>
+            </ul>
+        </details>
+        <details open>
+            <summary>Technician Assignment</summary>
+            <ul>
+                <li>
+                    <p>
+                        <span class="http http_post">Post</span> <code>/technician-assignment</code> : to register a
+                        technician assignment
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="http http_get">Get</span> <code>/technician-assignment/{id}</code> : to show a
+                        technician assignment info by query
+                        id
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="http http_patch">Patch</span> <code>/technician-assignment/{id}</code> : to update
+                        a
+                        technician assignment info.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="http http_delete">Delete</span> <code>/technician-assignment/{id}</code> : to soft
+                        delete a technician assignment
+                        record, record will be only soft deleted.
+                    </p>
+                </li>
+            </ul>
+        </details>
+        <details open>
+            <summary>Technicians</summary>
+            <ul>
+                <li>
+                    <p>
+                        <span class="http http_post">Post</span> <code>/technician</code> : to register a technician
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="http http_get">Get</span> <code>/technician/{id}</code> : to show technician info
+                        by query
+                        id
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="http http_patch">Patch</span> <code>/technician/{id}</code> : to update technician
+                        info.
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <span class="http http_delete">Delete</span> <code>/technician/{id}</code> : to soft delete
+                        technician
+                        record, record will be only soft deleted.
+                    </p>
+                </li>
+            </ul>
+        </details>
     </main>
 </body>
 

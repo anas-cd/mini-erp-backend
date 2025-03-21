@@ -2,10 +2,12 @@
 
 namespace App\Traits;
 
+use Illuminate\Http\JsonResponse;
+
 trait APIResponseTrait
 {
     /* --- success method --- */
-    protected function success($data, int $code = 200, string $msg = null)
+    protected function success(mixed $data, int $code = 200, string $msg = null): JsonResponse
     {
 
         return response()->json([
@@ -16,7 +18,7 @@ trait APIResponseTrait
     }
 
     /* --- failed method --- */
-    protected function failed(array $data, int $code = 500, string $msg = null)
+    protected function failed(mixed $data, int $code = 500, string $msg = null): JsonResponse
     {
 
         return response()->json([
